@@ -1,5 +1,5 @@
 # Docker-NCSU
-This workspace provides tutorials for running the Practical Haplotype Graph (PHG) Docker on the NCSU Hazel server. The PHG is a powerful tool for analyzing haplotype data. You can find more information about PHG [here](https://academic.oup.com/bioinformatics/article/38/15/3698/6617344).
+This workspace provides tutorials for running the a docker image. For an example the Practical Haplotype Graph (PHG) Docker is used on the NCSU Hazel server. The PHG is a powerful tool for analyzing haplotype data. You can find more information about PHG [here](https://academic.oup.com/bioinformatics/article/38/15/3698/6617344).
 
 ## Docker Installation
 Before proceeding, you need to install Docker on your local system. The detailed installation process can be found [here](https://docs.docker.com/desktop/install/mac-install/).
