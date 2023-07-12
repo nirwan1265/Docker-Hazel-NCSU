@@ -9,7 +9,7 @@ Apptainer is used to run docker images in a server. More information can be foun
 ## Running the Docker Images
 To run the Docker image, follow these steps:
 ### Pulling the Docker Image Locally
-First, download the Docker image to your local system
+First, download the Docker image to your local system. For an example I used the lolcow image. 
 ```
 docker pull sylabsio/lolcow
 ```
