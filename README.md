@@ -18,10 +18,24 @@ Save the Docker image as a tar file.
 ```
 docker save sylabsio/lolcow > lolcow.tar
 ```
+### Logging to the Server
+Apptainer is only availble in login04 node.
+```
+ssh username@login04.hpc.ncsu.edu
+```
 ### Transferring the Tar File to the Server
 Transfer the lolcow.tar file to the server using the scp command. Replace username with your actual username and <location> with the desired destination path on the server.
 ```
 scp lolcow.tar username@login.hpc.ncsu.edu:<location>
+```
+### Running Apptainer in an Interactive Session
+The queue should be allocated to sif to run through the server. The full shell script can be found here.
+```
+bsub -Is -n 1 -q sif -W 45 -R "span[hosts=1]" bash
+```
+### Load the Apptainer module
+```
+module load apptainer
 ```
 ### Build a SIF File from the Tar on the Server
 On the server, build a SIF (Singularity Image Format) file from the tar using Apptainer.
