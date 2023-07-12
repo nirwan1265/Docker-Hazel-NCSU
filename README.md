@@ -1,4 +1,4 @@
-# PHG-NCSU
+# Docker-NCSU
 This workspace provides tutorials for running the Practical Haplotype Graph (PHG) Docker on the NCSU Hazel server. The PHG is a powerful tool for analyzing haplotype data. You can find more information about PHG [here](https://academic.oup.com/bioinformatics/article/38/15/3698/6617344).
 
 ## Docker Installation
@@ -23,8 +23,13 @@ Apptainer is only availble in login04 node.
 ```
 ssh username@login04.hpc.ncsu.edu
 ```
+### Exporting the Path
+```
+cd /share/$GROUP/$USER
+export PATH=$PATH:/opt/bin
+```
 ### Transferring the Tar File to the Server
-Transfer the lolcow.tar file to the server using the scp command. Replace username with your actual username and <location> with the desired destination path on the server.
+Transfer the lolcow.tar file to the server using the scp command from the local destination. Replace username with your actual username and <location> with the desired destination path on the server.
 ```
 scp lolcow.tar username@login.hpc.ncsu.edu:<location>
 ```
