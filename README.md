@@ -5,7 +5,7 @@ Detailed tutorial for PHG can be found [here]
 ## Docker 
 First Docker has to be installed in your system. The detailed process is explained [here](https://docs.docker.com/desktop/install/mac-install/).
 ## Apptainer 
-[Apptainer](https://apptainer.org/docs/user/latest/quick_start.html) is used to run docker images. To run docker images in a server, we first need to download it locally. If you are using Linux you can do it using Apptainer, but I use Mac OS so I use docker to download it and then convert it to sif. 
+[Apptainer](https://apptainer.org/docs/user/latest/quick_start.html) is used to run docker images in a server. We first need to download it locally. If you are using Linux you can do it using Apptainer, but I use Mac OS so I use docker to download it and then convert it to sif. 
 ### Pulling the docker image locally
 ```
 docker pull sylabsio/lolcow
