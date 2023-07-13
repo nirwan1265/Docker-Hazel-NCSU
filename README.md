@@ -23,10 +23,11 @@ Apptainer is only availble in login04 node.
 ```
 ssh username@login04.hpc.ncsu.edu
 ```
-### Exporting the Path
+### Changing the Path for Temporary files
+The path might already have been changed. But if not, use this
 ```
 cd /share/$GROUP/$USER
-export PATH=$PATH:/opt/bin
+export APPTAINER_CACHEDIR=/path/to/tmp
 ```
 ### Transferring the Tar File to the Server
 Transfer the lolcow.tar file to the server using the scp command from the local destination. Replace username with your actual username and <location> with the desired destination path on the server.
